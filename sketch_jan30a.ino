@@ -33,6 +33,18 @@ void loop() {
       delay(10);
     }
 
+    Serial.println("Verificando a rede aberta com melhor sinal");
+    for (int i = 0; i < qnt_DeRedes; ++i)
+      if (WiFi.encryptionType(i) == WIFI_AUTH_OPEN) {
+        Serial.println("Rede aberta com melhor sinal:");
+        Serial.println("Nome da Rede: ");
+        Serial.println(WiFi.SSID(i));
+        Serial.print(" - Sinal: ");
+        Serial.print(WiFi.RSSI(i));
+        Serial.println();
+        break
+      }
+
     delay(5000);
   }
 }
