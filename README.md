@@ -1,1 +1,1 @@
-Repositório com códigos na Arduino IDE e Platform.IO para ESP32 e Arduino UNO
+Repositório com códigos na Arduino IDE e PlatformIO para ESP32 e Arduino UNO
